@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecalho{
+    height: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 20px;
+}
+
+.baner{
+    width: 100%;
+
+}
+
+.baner img{
+    width: 100%;
+}
+
+.promo1{
+    border-bottom: 1px solid #A5A1A1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.promo{
+    height: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 20px;
+}
+
+.produtos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produtos1{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px;
+    
+}
+
+.imagembox{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.imagembox h4{
+    color: #161616;
+    font-size: 22px;
+    font-weight: 500; 
+}
+
+.imagembox p{
+    color: #161616;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p span{
+    color: #5CA720;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 2px solid #5CA720;
+}
+
+.imagembox button{
+    cursor: pointer;
+    width: 170px;
+    height: 51px;
+    border: none;
+    border-radius: 15px;
+    background: #5CA720;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.imagembox button:hover{
+    background: rgba(81, 34, 0, 0.75);
+}
+
+footer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F9F9F9;
+    border-top: 1px solid #A5A1A1;
+}
+
+.rodape{
+    
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.textoserviço{
+    /* height: 130px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.textocaixa{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.inputcontrol{
+display: flex;
+}
+
+.inputcontrol input{
+    width: 70%;
+    height: 45px;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    border: 0.5px solid #D9D9D9;
+    background: #FFF;
+    padding-left: 10px;
+}
+
+.inputcontrol button{
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    background: #5CA720;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+.inputcontrol button:hover{
+    background: rgba(81, 34, 0, 0.75);
+}
+
+.rodapepai{
+    border-top: 1px solid #A5A1A1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rodape1{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.redesociais{
+    margin-top: 10px;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pagamentos{
+    margin-top: 10px;
+    height: 40px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media screen and ( max-width: 320px) {
+    .imagembox img{
+        
+        width: 100%;
+
+    }
+    .produtos1{
+        /* border: solid black; */
+        gap: 45px;
+        width: 90%;
+        margin: 20px;
+    }
+
+    .textoserviço{
+        gap:5px ;
+        margin-top: 30px;
+    }
+
+    .rodape{
+        flex-direction: column;
+
+    }
+
+    .rodape1{
+        width: 50%;
+    }
+    .textocaixa{
+        width: 100%;
+        margin-block: 30px;
+
+    }
+    .textocaixa h4{
+        margin-bottom: 20px;
+    }
+    
+    .pagamentos{
+        border: solid black;
+        width: 70%;
+    }
+    .pagamentos img{
+        width: 100%;
+    }
+}
