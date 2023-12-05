@@ -28,6 +28,21 @@ header{
     width: 100%;
 }
 
+.imagembox figure{
+    /* height: 303px; */
+    background-color: #5CA720;
+    display: block;
+    border-radius: 10px;
+}
+.imagembox figure img{
+    border-radius: 10px;
+    display: block;
+}
+.imagembox figure img:hover{
+    opacity: 0.5;
+}
+
+
 .promo1{
     border-bottom: 1px solid #A5A1A1;
     display: flex;
@@ -64,6 +79,7 @@ header{
     flex-direction: column;
     align-items: start;
     gap: 20px;
+    display: block;
 }
 
 .imagembox h4{
@@ -189,10 +205,16 @@ display: flex;
 
 .pagamentos{
     margin-top: 10px;
-    height: 40px;
+    height: 60px;
     width: 20%;
-    display: flex;
+    display: block;
     justify-content: space-around;
+}
+.pagamentos img{
+    height: 50px;
+    width: 60px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 
@@ -220,7 +242,7 @@ display: flex;
     }
 
     .rodape1{
-        width: 50%;
+        width: 90%;
     }
     .textocaixa{
         width: 100%;
@@ -232,10 +254,20 @@ display: flex;
     }
     
     .pagamentos{
-        border: solid black;
-        width: 70%;
+        margin-top: 5px;
+        height: 35px;
+        width: 45%;
+        display: block;
     }
     .pagamentos img{
-        width: 100%;
+        height: 25px;
+        width: 7vw;
+    }
+
+    .redesociais{
+        margin-top: 5px;
+        height: 35px;
+        width: 40%;
+        display: block;
     }
 }
