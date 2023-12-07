@@ -92,13 +92,13 @@ header{
     flex-direction: column;
     align-items: start;
     gap: 20px;
-    display: block;
 }
 
 .imagembox h4{
     color: #161616;
     font-size: 22px;
     font-weight: 500; 
+
 }
 
 .imagembox p{
@@ -142,18 +142,26 @@ footer{
 }
 
 .rodape{
-    
     width: 90%;
     display: flex;
     justify-content: space-between;
 
 }
 
-.textoserviço{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.textoservico ul{
+    list-style:none;
 
+}
+
+.textoservico ul li{
+    margin-top: 15px;
+}
+
+.textoservico ul li a{
+    text-decoration: none;
+    color: #161616;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .textocaixa{
@@ -202,38 +210,33 @@ display: flex;
 }
 
 .rodape1{
-    border: solid black;
     width: 90%;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.redesociais{
-    border: solid black; 
+.redesociais{ 
     margin-top: 10px;
     width: 10%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .redesociais img{
-    /* height: 50px; */
-    width: 60px;
     margin-right: 10px;
     margin-top: 5px;
 }
 
 .pagamentos{
-    border: solid black;
     margin-top: 10px;
     height: 60px;
-    display: block;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .pagamentos img{
-    height: 50px;
-    width: 60px;
     margin-right: 10px;
     margin-top: 5px;
 }
@@ -251,9 +254,12 @@ display: flex;
         margin: 20px;
     }
 
-    .textoserviço{
+    footer{
+        height: auto;
+    }
+
+    .textoserviço ul{
         gap:5px ;
-        margin-top: 30px;
     }
 
     .rodape{
@@ -277,70 +283,56 @@ display: flex;
         margin-top: 5px;
         height: 35px;
         width: 45%;
-        display: block;
     }
     .pagamentos img{
         height: 25px;
-        width: 7vw;
     }
 
     .redesociais{
         margin-top: 5px;
         height: 35px;
         width: 40%;
-        display: block;
     }
 } 
 
-@media screen and ( max-width: 500px) {
-    .imagembox img{
-        
-        width: 100%;
+@media screen and ( max-width: 620px){
 
+    footer{
+        height: auto;
+    }
+    .produtos{
+
+        display: block;
     }
     .produtos1{
-        gap: 45px;
-        width: 90%;
-        margin: 20px;
+
+        gap: 30px ;
+    }
+    .imagembox{
+        
+        width: 250px;
+       
     }
 
-    .textoserviço{
-        gap: 5px;
-        margin-top: 30px;
+    .imagembox img{
+
+        width: 100%;
     }
 
+    .redesociais{
+        
+        width: 20%;
+    }
     .rodape{
         flex-direction: column;
-
+        
     }
+    .textocaixa h4{
+        margin-block: 20px;
 
-    .rodape1{
-        width: 90%;
     }
     .textocaixa{
         width: 100%;
         margin-block: 30px;
-
-    }
-    .textocaixa h4{
-        margin-bottom: 20px;
-    }
-    
-    .pagamentos{
-        margin-top: 5px;
-        height: 35px;
-        width: 45%;
-        display: block;
-    }
-    .pagamentos img{
-        height: 25px;
-        width: 7vw;
-    }
-
-    .redesociais{
-        margin-top: 5px;
-        height: 35px;
-        width: 40%;
-        display: block;
     }
 }
