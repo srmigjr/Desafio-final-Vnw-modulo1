@@ -6,22 +6,35 @@
    box-sizing: border-box;
    font-family: 'Lato', sans-serif;
 }
+body{
+    padding-top: 80px;
+}
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.cabecalhopai{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1 ;
 }
 .cabecalho{
     height: 30px;
     width: 90%;
     display: flex;
     justify-content: space-between;
-    margin-block: 20px;
+   
 }
 
 .baner{
     width: 100%;
-
 }
 
 .baner img{
@@ -29,7 +42,6 @@ header{
 }
 
 .imagembox figure{
-    /* height: 303px; */
     background-color: #5CA720;
     display: block;
     border-radius: 10px;
@@ -48,6 +60,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
 }
 .promo{
@@ -137,7 +150,6 @@ footer{
 }
 
 .textoserviço{
-    /* height: 130px; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -190,6 +202,7 @@ display: flex;
 }
 
 .rodape1{
+    border: solid black;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -197,18 +210,26 @@ display: flex;
 }
 
 .redesociais{
+    border: solid black; 
     margin-top: 10px;
     width: 10%;
     display: flex;
     justify-content: space-around;
 }
 
+.redesociais img{
+    /* height: 50px; */
+    width: 60px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
 .pagamentos{
+    border: solid black;
     margin-top: 10px;
     height: 60px;
-    width: 20%;
     display: block;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .pagamentos img{
     height: 50px;
@@ -218,14 +239,13 @@ display: flex;
 }
 
 
-@media screen and ( max-width: 320px) {
+ @media screen and ( max-width: 320px) {
     .imagembox img{
         
         width: 100%;
 
     }
     .produtos1{
-        /* border: solid black; */
         gap: 45px;
         width: 90%;
         margin: 20px;
@@ -233,6 +253,59 @@ display: flex;
 
     .textoserviço{
         gap:5px ;
+        margin-top: 30px;
+    }
+
+    .rodape{
+        flex-direction: column;
+
+    }
+
+    .rodape1{
+        width: 90%;
+    }
+    .textocaixa{
+        width: 100%;
+        margin-block: 30px;
+
+    }
+    .textocaixa h4{
+        margin-bottom: 20px;
+    }
+    
+    .pagamentos{
+        margin-top: 5px;
+        height: 35px;
+        width: 45%;
+        display: block;
+    }
+    .pagamentos img{
+        height: 25px;
+        width: 7vw;
+    }
+
+    .redesociais{
+        margin-top: 5px;
+        height: 35px;
+        width: 40%;
+        display: block;
+    }
+} 
+
+@media screen and ( max-width: 500px) {
+    .imagembox img{
+        
+        width: 100%;
+
+    }
+    .produtos1{
+        gap: 45px;
+        width: 90%;
+        margin: 20px;
+    }
+
+    .textoserviço{
+        gap: 5px;
         margin-top: 30px;
     }
 
